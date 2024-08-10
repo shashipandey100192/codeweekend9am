@@ -1,20 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Abc, { Myabout1, Myimg, Mypage, Mypage1 } from './About';
 import "./style.css";
-import Contactpage from './Contactpage';
+import Myoldpage from './Myoldpage';
+import { BrowserRouter,Route,Routes } from 'react-router-dom';
+import Myloginpage from './modules/auth/Myloginpage';
+import Myregistorpage from './modules/auth/Myregistorpage';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Contactpage/>
-   <Abc></Abc>
-   <Myabout1></Myabout1>
-   <Mypage></Mypage>
-   <Mypage1></Mypage1>
-   <Myimg></Myimg>
-  
+    <BrowserRouter>
+      <Routes>
+        <Route path='' element={<Myloginpage/>}></Route>  
+        <Route path="registor" element={<Myregistorpage/>}></Route>
+        <Route path='oldpage' element={<Myoldpage/>}></Route>
+      </Routes>
+    
+    </BrowserRouter>
+   
+    
   </React.StrictMode>
 );
 

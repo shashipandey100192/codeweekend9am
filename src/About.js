@@ -41,8 +41,6 @@ export function Myimg()
         <img src={Disimg} alt="kjsdfk"/>
         <h1>display image from CDN</h1>
         <img src={abc} alt="sdfkhsdjf"/>
-
-
         </Fragment>
     )
 }
