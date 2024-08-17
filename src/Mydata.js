@@ -1,0 +1,37 @@
+export const userlist=[
+    {
+        sno:1,
+        name:"kumar",
+        phone:'54785478',
+        age:20,
+        gender:"male"
+    },
+    {
+        sno:2,
+        name:"kumar",
+        phone:'54785478',
+        age:20,
+        gender:"male"
+    },
+    {
+        sno:3,
+        name:"ravi",
+        phone:'54785478',
+        age:35,
+        gender:"male"
+    },
+    {
+        sno:4,
+        name:"pooja",
+        phone:'54785478',
+        age:24,
+        gender:"female"
+    },
+    {
+        sno:5,
+        name:"mohit",
+        phone:'54785478',
+        age:25,
+        gender:"male"
+    }
+];
