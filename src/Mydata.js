@@ -35,3 +35,39 @@ export const userlist=[
         gender:"male"
     }
 ];
+
+export const emplist = [
+    {
+        name:"kumar",
+        id:1,
+        salary:4500,
+        year:2024,
+        exp:5,
+        projectcount:10
+    },
+    {
+        name:"pankaj",
+        id:2,
+        salary:4000,
+        year:2025,
+        exp:4,
+        projectcount:8
+    },
+    {
+        name:"mohan",
+        id:3,
+        salary:5000,
+        year:2024,
+        exp:9,
+        projectcount:12
+    },
+    {
+        name:"pooja",
+        id:4,
+        salary:6000,
+        year:2025,
+        exp:10,
+        projectcount:15
+    }
+
+];
