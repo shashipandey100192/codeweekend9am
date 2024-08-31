@@ -14,6 +14,7 @@ import Myservicepage from './modules/dashboard/pages/Myservicepage';
 import Mycontactpage from './modules/dashboard/pages/Mycontactpage';
 import Mychartpage from './modules/dashboard/pages/Mychartpage';
 import Userpagedetails from './modules/dashboard/pages/Userpagedetails';
+import Parentpage from './modules/dashboard/pages/Parentpage';
 
 
 
@@ -30,6 +31,7 @@ root.render(
                   <Route  path='service/details/:id' element={<Userpagedetails/>}></Route>
               <Route  path='contact' element={<Mycontactpage/>}></Route>
               <Route  path='chart' element={<Mychartpage/>}></Route>
+              <Route path='myprops' element={<Parentpage/>}/>
               <Route path='*' element={<Myerrorpage/>}></Route>
         </Route>
         <Route path='oldpage' element={<Myoldpage/>}></Route>
