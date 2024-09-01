@@ -18,6 +18,7 @@ function Mysidebar() {
             <li><Link to="contact" className="link-body-emphasis d-inline-flex text-decoration-none rounded">Contact</Link></li>
             <li><Link to="chart" className="link-body-emphasis d-inline-flex text-decoration-none rounded">charts</Link></li>
             <li><Link to="myprops" className="link-body-emphasis d-inline-flex text-decoration-none rounded">props</Link></li>
+            <li><Link to="mui" className="link-body-emphasis d-inline-flex text-decoration-none rounded">MUI UI</Link></li>
           </ul>
         </div>
       </li>

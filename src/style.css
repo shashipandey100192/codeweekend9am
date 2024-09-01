@@ -81,3 +81,8 @@ body,h1
   {
     margin-top: 70px !important;
   }
+
+  .fsize
+  {
+    font-size: 100px;
+  }
