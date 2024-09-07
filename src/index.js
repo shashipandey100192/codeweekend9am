@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{lazy,Suspense} from 'react';
 import ReactDOM from 'react-dom/client';
 import "./style.css";
 import Myoldpage from './Myoldpage';
@@ -16,6 +16,8 @@ import Mychartpage from './modules/dashboard/pages/Mychartpage';
 import Userpagedetails from './modules/dashboard/pages/Userpagedetails';
 import Parentpage from './modules/dashboard/pages/Parentpage';
 import Mymuipage from './modules/dashboard/pages/Mymuipage';
+// import Mylazypage from './modules/dashboard/pages/Mylazypage';
+const Mylazypage = lazy(()=>import('./modules/dashboard/pages/Mylazypage'));
 
 
 
@@ -34,6 +36,9 @@ root.render(
               <Route  path='chart' element={<Mychartpage/>}></Route>
               <Route path='myprops' element={<Parentpage/>}/>
               <Route path='mui' element={<Mymuipage/>}/>
+              <Route path='mylazy' element={<Suspense fallback={<h1 className='myloader'>Loading content...</h1>}>
+                <Mylazypage/>
+              </Suspense>}/>
 
               <Route path='*' element={<Myerrorpage/>}></Route>
         </Route>

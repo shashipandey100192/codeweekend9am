@@ -86,3 +86,13 @@ body,h1
   {
     font-size: 100px;
   }
+  .myloader
+  {
+    padding:50px;
+    font-size: 50px;
+    text-align: center;
+    background-color: red;
+    color:white;
+    width: 500px;
+    border-radius: 20px;
+  }

@@ -19,6 +19,7 @@ function Mysidebar() {
             <li><Link to="chart" className="link-body-emphasis d-inline-flex text-decoration-none rounded">charts</Link></li>
             <li><Link to="myprops" className="link-body-emphasis d-inline-flex text-decoration-none rounded">props</Link></li>
             <li><Link to="mui" className="link-body-emphasis d-inline-flex text-decoration-none rounded">MUI UI</Link></li>
+            <li><Link to="mylazy" className="link-body-emphasis d-inline-flex text-decoration-none rounded">lazyloading</Link></li>
           </ul>
         </div>
       </li>

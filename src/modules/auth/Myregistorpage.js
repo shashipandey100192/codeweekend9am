@@ -1,14 +1,29 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useForm } from 'react-hook-form'
+import {ToastContainer, toast } from 'react-toastify'
+
 
 
 function Myregistorpage() {
 
+    const navigat = useNavigate();
   const {register,handleSubmit,formState: { errors }} = useForm();
 
 const  mysubmit = (myform)=>{
-  console.log(myform);
+      // if(myform)
+      // {
+      //   navigat('/');
+      // }
+      if(myform)
+        {
+          toast.success("successfully registor page");
+         setTimeout(()=>{
+          navigat("/");
+         },2000);
+        
+        }
+
 }
 
 
@@ -112,6 +127,7 @@ const  mysubmit = (myform)=>{
         </div>
       </div>
     </div>
+    <ToastContainer/>
     </form>
 
   )
