@@ -29,6 +29,7 @@ function Myloginpage() {
                 <div class="mb-3">
                  <button className='btn btn-success'>Login</button>
                  <Link to="registor">New User Registor</Link>
+                 <Link to="dashboard">dashboard</Link>
                 </div>
               </div>
             </div>

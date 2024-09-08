@@ -20,6 +20,7 @@ function Mysidebar() {
             <li><Link to="myprops" className="link-body-emphasis d-inline-flex text-decoration-none rounded">props</Link></li>
             <li><Link to="mui" className="link-body-emphasis d-inline-flex text-decoration-none rounded">MUI UI</Link></li>
             <li><Link to="mylazy" className="link-body-emphasis d-inline-flex text-decoration-none rounded">lazyloading</Link></li>
+            <li><Link to="myredux" className="link-body-emphasis d-inline-flex text-decoration-none rounded">rexuxpage</Link></li>
           </ul>
         </div>
       </li>

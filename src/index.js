@@ -16,6 +16,9 @@ import Mychartpage from './modules/dashboard/pages/Mychartpage';
 import Userpagedetails from './modules/dashboard/pages/Userpagedetails';
 import Parentpage from './modules/dashboard/pages/Parentpage';
 import Mymuipage from './modules/dashboard/pages/Mymuipage';
+import { Provider } from 'react-redux';
+import { mystore } from './modules/dashboard/reduxpage/Mystorepage';
+import Reduxwelcomepage from './modules/dashboard/reduxpage/Reduxwelcomepage';
 // import Mylazypage from './modules/dashboard/pages/Mylazypage';
 const Mylazypage = lazy(()=>import('./modules/dashboard/pages/Mylazypage'));
 
@@ -25,6 +28,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+      <Provider store={mystore}>
       <Routes>
         <Route path='' element={<Myloginpage/>}></Route>  
         <Route path="registor" element={<Myregistorpage/>}></Route>
@@ -39,13 +43,14 @@ root.render(
               <Route path='mylazy' element={<Suspense fallback={<h1 className='myloader'>Loading content...</h1>}>
                 <Mylazypage/>
               </Suspense>}/>
+              <Route path='myredux' element={<Reduxwelcomepage/>}/>
 
               <Route path='*' element={<Myerrorpage/>}></Route>
         </Route>
         <Route path='oldpage' element={<Myoldpage/>}></Route>
         <Route path='*' element={<Myerrorpage/>}></Route>
       </Routes>
-    
+      </Provider>
     </BrowserRouter>
    
     
