@@ -1,0 +1,423 @@
+About mern course : 
+	M : mongodb (database)
+	E : express.js (backend)
+	R : react.js  (client, frontend)
+	N : node.js   (run time invarment)
+1) install in your system
+	1) nodejs
+	2) git bash
+	3) git account create 
+2) GUI(Graphic User Interface) vs CLI(command line tools)
+3) model(modules programing) 
+4) inter vs compi
+5) about react.js ?
+	1) JavaScript library
+	2) building user interfaces based on components 
+	3) maintained by Facebook
+	4) individual developers and companies
+	5) single-page-application (SPA)
+6) create project on react.js
+	1) npx create-react-app appname
+7) what is NPX(Node Package eXecute)?
+Note:project name must have small letter 
+8) what is dependencies ?
+9) what is node_modules ?
+10) file and folder structure ? 
+11) what is NPM (Node Package Manager) ?
+------------------------------------------------------------
+12) npm start 	// project start / serve  / apps run / server start
+13) ctrl + c    // close / stope 
+Note: function name and file name must have start from capital letter
+Note: use return type function 
+Note: one function has one return
+NOte: one return function has one element return
+Note: all element has closing , self close
+Note: one file has one  default function
+Note: img elements must have an alt prop
+Note: can't pass "image, photo,picture" name in alt
+Note: replace  a 	to	Link
+Note: replace  href	to	to
+14) types of component(page)?
+	1) function component
+	2) class component
+15) types of import / export
+	1) default import / export
+	2) name import / export   {} // must have inside {}
+	 
+16) element wrap
+	1) html elements
+	2) <></> blank element
+	3) Fragment 
+
+17) display image 
+	1) public folder
+	2) src folder
+	3) CDN (online)
+-------------------------------------------------------
+18) git
+ 1) about git
+   1) GitHub is a developer tool
+   2) tracking system
+   3) distributed version control of Git plus access control 
+   4) code shares 
+ 2) git setup
+	1) git init		// initialized
+	2) git login 		// login your github account
+	3) create repo
+Note: local project name and repo name must have same
+	4) git remote -v	// check your connection
+	5) git remote add origin "repopath"		// create connection 
+	6) git add --all	// add all files on git/ save
+	7) git commit -m "any msg"	// commit your change in project 
+	8) git push origin master	// push code on repo 
+	9) git clone "repopath"		// clone project in your system
+	10) npm install			// install node_modules 
+	-----------------------------------
+		1) git add --all
+		2) git commit -m "msg"
+		3) git pull origin master
+			npm install : if install new package then use this cmd
+------------------------------------------------------------
+19) expression  {}    // pass datatype inside expression 
+	number
+	string
+	boolean
+	object
+	array
+	variable
+	html element
+	component
+	operations
+	condition (ternary ope)
+20) react routing  
+	1) install
+		npm install react-router-dom (package)
+	2) import 
+		BrowserRouter		// routing within your application	
+		Route			// single route manage form client
+		Routes			// make a group of route 
+21) file types
+	1) .js
+	2) .jsx
+	3) .ts
+	4) .tsx
+22) page types
+	1) blank page ( login ,registor, forget , error)
+	2) full page ( landing, home, main)
+-------------------------------------------------------------------------------------
+23) UI Component
+	1) html,css (custom)
+	2) bootstrap (package)
+	3) react-bootstrap (package)
+	4) MUI (package)
+24) error page
+	*
+25) bootstrap
+	1) install 
+		npm install bootstrap 		// install latest version of bootstrap
+		npm uninstall bootstrap		// uninstall bootstrap
+		npm install bootstrap@4.0.0	// install particular version of bootstrap
+	2) import ( inside root file)
+---------------------------------------------
+26) react Hooks(function)
+	use ( prefix)
+		useEffect()		
+		useState()
+		useRef()
+			...
+	Note: can't use inside function
+	Note: can't use inside conditional statement
+	Note: can't define bottom of page 
+	
+	a) Destructuring assignment array and object
+		const a=[10,20,30]	//  assignment
+		const [10,20,30]=a	//  Destructuring assignment array
+		const a = {name:"kumar",age:20} //  assignment
+		const {name , age} = a		//  Destructuring assignment object
+
+27) react data binding
+	map()
+28) network cell (api) 
+	1) fetch()  // core function of javascript
+	2) axios()  // third parti lib
+		a) npm install axios
+		b) import in component
+		c) function define 
+Note: Each child in a list should have a unique "key" prop.
+--------------------------------------------
+29) use of Outlet (child routes/ nested routing)
+	1) import Outlet inside parent component
+	2) define nested routing 
+30) param routing
+	1) id send in url
+	2) routing for param component
+	3) get id from url 
+		useParam()		// get last id from url
+	4) call api with id 
+	
+---------------------------------------------------------------
+31) react chart(graph)
+	1) install
+		1) npm install recharts
+	2) import 
+32) form validation
+	1) custom js
+	2) lib( react-hook-form) (package)
+		1) install
+			npm install react-hook-form
+		2) import
+			useForm()
+			input validation with error message
+			input validation with multi error message
+Note: React Developer Tools ext	install in chrome
+-------------------------------------------------------
+33)  React-Toastify   smart message (notification)
+	1) install
+	 	1) npm install --save react-toastify
+	2) import  
+		1) import { ToastContainer, toast } from 'react-toastify';
+		2) import 'react-toastify/dist/ReactToastify.css';
+	3) call function
+		toast()
+
+34) props (property) send data parent to child only
+	1) function component (props)
+	2) class component (this.props)
+35) Conditional Rendering
+------------------------------------------------
+36) Material UI 
+	1) install
+		npm install @mui/material @emotion/react @emotion/styled	// default component
+		npm install @mui/material @mui/styled-engine-sc styled-components // style component
+		npm install @fontsource/roboto					// roboto font style
+		npm install @mui/x-data-grid		// grid data
+	2) import
+		Note: import component depend on use 
+37) pagination table 
+38) React Icons (icons lib) 
+	1) install
+		npm install react-icons --save
+	2) import particular icon
+---------------------------------------------
+39) lazy loading (Code Splitting)
+	1) lazy()
+	2) import()
+	3) suspence
+	4) fallback
+
+		a) import {lazy,Suspense} from 'react';
+		b) define route with suspence 
+		3) import component 
+40) redirect url 
+	useNavigator()
+41) build command (production )
+	npm run build
+42) live application 
+	1) netlify
+	2) render ( free doman and hosting)
+--------------------------------------------------
+43) redux 
+	1) about redux 
+		1) Redux is a JavaScript library
+		2) state management system of application
+		3) central,centralizing data storage
+		4) Redux is an open-source
+	 what is redux ?
+	 what is react-redux?
+	 what is redux-toolkit?	
+	2)  install
+		npm install @reduxjs/toolkit react-redux
+	3) create store
+	4) wrap store with application 
+		
+	
+---------
+configureStore
+reducer
+Provider
+store
+createSlice
+useDispatch
+useSelector
+dispatch
+state
+action
+
+-------------------------------------
+login page
+registor page
+forget page
+error page
+sidebar 
+navbar
+footer
+dashboard (main)
+paginations
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+
+
+
+
+ 
+	
+	
+	 
+
+	 
+
+	
+
+
+	
+
+
+
+
+	
+	
+
+------------------------------------------
+Parsing error: Only one default export allowed per module.
+'Myabout1' is defined but never used	
+Parsing error: Adjacent JSX elements must be wrapped in an enclosing tag.	
+Parsing error: Unterminated JSX contents.
+Attempted import error: 'Mypage1' is not exported from 
+
+Warning : validateDOMNestin  cannot appear as a descendant of																			
